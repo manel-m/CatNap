@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9967C68922D44A3F00A53996 /* Cat.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9967C68822D44A3F00A53996 /* Cat.sks */; };
+		995E091122D5AEF500D54F13 /* CatCurl.sks in Resources */ = {isa = PBXBuildFile; fileRef = 995E091022D5AEF500D54F13 /* CatCurl.sks */; };
+		995E091322D5B01D00D54F13 /* CatWakeUp.sks in Resources */ = {isa = PBXBuildFile; fileRef = 995E091222D5B01D00D54F13 /* CatWakeUp.sks */; };
+		9967C68B22D582D900A53996 /* Cat.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9967C68A22D582D900A53996 /* Cat.sks */; };
 		99E50A4922D4108B00C1DAB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E50A4822D4108B00C1DAB1 /* AppDelegate.swift */; };
 		99E50A4B22D4108B00C1DAB1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 99E50A4A22D4108B00C1DAB1 /* GameScene.sks */; };
 		99E50A4D22D4108B00C1DAB1 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 99E50A4C22D4108B00C1DAB1 /* Actions.sks */; };
@@ -24,7 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9967C68822D44A3F00A53996 /* Cat.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Cat.sks; sourceTree = "<group>"; };
+		995E091022D5AEF500D54F13 /* CatCurl.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatCurl.sks; sourceTree = "<group>"; };
+		995E091222D5B01D00D54F13 /* CatWakeUp.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatWakeUp.sks; sourceTree = "<group>"; };
+		9967C68A22D582D900A53996 /* Cat.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Cat.sks; sourceTree = "<group>"; };
 		99E50A4522D4108B00C1DAB1 /* CatNap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatNap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E50A4822D4108B00C1DAB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99E50A4A22D4108B00C1DAB1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -57,7 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				99E50A4A22D4108B00C1DAB1 /* GameScene.sks */,
-				9967C68822D44A3F00A53996 /* Cat.sks */,
+				9967C68A22D582D900A53996 /* Cat.sks */,
+				995E091022D5AEF500D54F13 /* CatCurl.sks */,
+				995E091222D5B01D00D54F13 /* CatWakeUp.sks */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -169,13 +175,15 @@
 				99E50A4B22D4108B00C1DAB1 /* GameScene.sks in Resources */,
 				99E50A6922D417CA00C1DAB1 /* lose.mp3 in Resources */,
 				99E50A5622D4109300C1DAB1 /* Assets.xcassets in Resources */,
+				995E091322D5B01D00D54F13 /* CatWakeUp.sks in Resources */,
+				995E091122D5AEF500D54F13 /* CatCurl.sks in Resources */,
 				99E50A6822D417CA00C1DAB1 /* win.mp3 in Resources */,
 				99E50A5922D4109300C1DAB1 /* LaunchScreen.storyboard in Resources */,
 				99E50A6622D417CA00C1DAB1 /* mrreow.mp3 in Resources */,
 				99E50A6722D417CA00C1DAB1 /* pop.mp3 in Resources */,
 				99E50A6A22D417CA00C1DAB1 /* backgroundMusic.mp3 in Resources */,
 				99E50A4D22D4108B00C1DAB1 /* Actions.sks in Resources */,
-				9967C68922D44A3F00A53996 /* Cat.sks in Resources */,
+				9967C68B22D582D900A53996 /* Cat.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
