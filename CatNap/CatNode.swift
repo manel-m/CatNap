@@ -15,7 +15,7 @@ class CatNode: SKSpriteNode, EventListenerNode {
                                 size:catBodyTexture.size())
         parent!.physicsBody!.categoryBitMask = PhysicsCategory.Cat
         parent!.physicsBody!.collisionBitMask = PhysicsCategory.Block
-            | PhysicsCategory.Edge
+            | PhysicsCategory.Edge | PhysicsCategory.Spring
         parent!.physicsBody!.contactTestBitMask = PhysicsCategory.Bed
             | PhysicsCategory.Edge
     }
