@@ -43,5 +43,41 @@ class HookBaseNode: SKSpriteNode , EventListenerNode {
             withBodyA: physicsBody!, bodyB: hookNode.physicsBody!,
             anchorA: position, anchorB: hookPosition)
         scene.physicsWorld.add(ropeJoint)
+        
+        let range = SKRange(lowerLimit: 0.0, upperLimit: 0.0)
+        let orientConstraint = SKConstraint.orient(to: hookNode, offset: range)
+        ropeNode.constraints = [orientConstraint]
+        
+        hookNode.physicsBody!.applyImpulse(CGVector(dx: 30, dy: 0))
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(catTapped), name: Notification.Name(CatNode.kCatTappedNotification), object: nil)
+    }
+    @objc func catTapped() {
+        if isHooked {
+            releaseCat()
+        }
+    }
+    
+    func hookCat(catPhysicsBody: SKPhysicsBody) {
+        catPhysicsBody.velocity = CGVector(dx: 0, dy: 0)
+        catPhysicsBody.angularVelocity = 0
+        let pinPoint = CGPoint(
+            x: hookNode.position.x,
+            y: hookNode.position.y + hookNode.size.height/2)
+        hookJoint = SKPhysicsJointFixed.joint(
+            withBodyA: hookNode.physicsBody!, bodyB: catPhysicsBody,
+            anchor: pinPoint)
+        scene!.physicsWorld.add(hookJoint)
+        hookNode.physicsBody!.contactTestBitMask = PhysicsCategory.None
+    }
+    
+    func releaseCat() {
+        hookNode.physicsBody!.categoryBitMask = PhysicsCategory.None
+        hookNode.physicsBody!.contactTestBitMask =
+            PhysicsCategory.None
+        hookJoint.bodyA.node!.zRotation = 0
+        hookJoint.bodyB.node!.zRotation = 0
+        scene!.physicsWorld.remove(hookJoint)
+        hookJoint = nil
     }
 }

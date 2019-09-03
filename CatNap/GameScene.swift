@@ -24,7 +24,6 @@ struct PhysicsCategory {
     static let Label: UInt32 = 0b10000 // 16
     static let Spring: UInt32 = 0b100000 // 32
     static let Hook: UInt32 = 0b1000000 // 64
-
 }
 
 class GameScene: SKScene , SKPhysicsContactDelegate {
@@ -32,6 +31,8 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
     var catNode: CatNode!
     var playable = true
     var currentLevel: Int = 0
+    var hookBaseNode: HookBaseNode?
+
     
     class func level(levelNum: Int) -> GameScene? {
         let scene = GameScene(fileNamed: "Level\(levelNum)")!
@@ -63,6 +64,12 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
         catNode = (childNode(withName: "//cat_body") as! CatNode)
         
         SKTAudio.sharedInstance().playBackgroundMusic("backgroundMusic.mp3")
+        
+        hookBaseNode = childNode(withName: "hookBase") as? HookBaseNode
+        
+//        let rotationConstraint = SKConstraint.zRotation(
+//            SKRange(lowerLimit: -π/4, upperLimit: π/4))
+//        catNode.parent!.constraints = [rotationConstraint]
     }
     
     func didBegin(_ contact: SKPhysicsContact) {
@@ -88,7 +95,13 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
             | PhysicsCategory.Edge {
             print("FAIL")
             lose()
-        } }
+        }
+        if collision == PhysicsCategory.Cat | PhysicsCategory.Hook
+            && hookBaseNode?.isHooked == false {
+            print("print hookcat")
+            hookBaseNode!.hookCat(catPhysicsBody:catNode.parent!.physicsBody!)
+        }
+    }
     
     func inGameMessage(text: String) {
         let message = MessageNode(message: text)
@@ -104,6 +117,9 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
     }
     
     func lose() {
+        if currentLevel > 1 {
+            currentLevel -= 1
+        }
         playable = false
         //1
         SKTAudio.sharedInstance().pauseBackgroundMusic()
@@ -116,6 +132,9 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
     }
     
     func win() {
+        if currentLevel < 3 {
+            currentLevel += 1
+        }
         playable = false
         SKTAudio.sharedInstance().pauseBackgroundMusic()
         SKTAudio.sharedInstance().playSoundEffect("win.mp3")
@@ -125,7 +144,7 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
     }
     
     override func didSimulatePhysics() {
-        if playable {
+        if playable && hookBaseNode?.isHooked != true {
             if abs(catNode.parent!.zRotation) >
                 CGFloat(25).degreesToRadians() {
                 lose() }
