@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		9911905E23221832000948F9 /* discolights-loop.mov in Resources */ = {isa = PBXBuildFile; fileRef = 9911905C23221832000948F9 /* discolights-loop.mov */; };
 		9911905F23221832000948F9 /* disco-sound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9911905D23221832000948F9 /* disco-sound.m4a */; };
+		9911906223221909000948F9 /* Level5.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9911906023221909000948F9 /* Level5.sks */; };
+		9911906323221909000948F9 /* Level6.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9911906123221909000948F9 /* Level6.sks */; };
+		991190652323149E000948F9 /* PictureNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991190642323149E000948F9 /* PictureNode.swift */; };
 		995CC9192320CBBB00DC42CF /* Level4.sks in Resources */ = {isa = PBXBuildFile; fileRef = 995CC9182320CBBB00DC42CF /* Level4.sks */; };
 		995E091122D5AEF500D54F13 /* CatCurl.sks in Resources */ = {isa = PBXBuildFile; fileRef = 995E091022D5AEF500D54F13 /* CatCurl.sks */; };
 		995E091322D5B01D00D54F13 /* CatWakeUp.sks in Resources */ = {isa = PBXBuildFile; fileRef = 995E091222D5B01D00D54F13 /* CatWakeUp.sks */; };
@@ -52,6 +55,9 @@
 /* Begin PBXFileReference section */
 		9911905C23221832000948F9 /* discolights-loop.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "discolights-loop.mov"; sourceTree = "<group>"; };
 		9911905D23221832000948F9 /* disco-sound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "disco-sound.m4a"; sourceTree = "<group>"; };
+		9911906023221909000948F9 /* Level5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level5.sks; sourceTree = "<group>"; };
+		9911906123221909000948F9 /* Level6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level6.sks; sourceTree = "<group>"; };
+		991190642323149E000948F9 /* PictureNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureNode.swift; sourceTree = "<group>"; };
 		995CC9182320CBBB00DC42CF /* Level4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level4.sks; sourceTree = "<group>"; };
 		995E091022D5AEF500D54F13 /* CatCurl.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatCurl.sks; sourceTree = "<group>"; };
 		995E091222D5B01D00D54F13 /* CatWakeUp.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatWakeUp.sks; sourceTree = "<group>"; };
@@ -121,6 +127,8 @@
 				9989274C22E1332A002E7F1F /* Level2.sks */,
 				9989275222F4ED54002E7F1F /* Level3.sks */,
 				995CC9182320CBBB00DC42CF /* Level4.sks */,
+				9911906023221909000948F9 /* Level5.sks */,
+				9911906123221909000948F9 /* Level6.sks */,
 				9967C68A22D582D900A53996 /* Cat.sks */,
 				995E091022D5AEF500D54F13 /* CatCurl.sks */,
 				995E091222D5B01D00D54F13 /* CatWakeUp.sks */,
@@ -181,6 +189,7 @@
 				9989275022EE4345002E7F1F /* HookBaseNode.swift */,
 				9989274E22E13812002E7F1F /* SpringNode.swift */,
 				998927542314CFB1002E7F1F /* StoneNode.swift */,
+				991190642323149E000948F9 /* PictureNode.swift */,
 				99E50A5222D4108B00C1DAB1 /* Main.storyboard */,
 				99E50A5522D4109300C1DAB1 /* Assets.xcassets */,
 				99E50A5722D4109300C1DAB1 /* LaunchScreen.storyboard */,
@@ -271,12 +280,14 @@
 				995E091122D5AEF500D54F13 /* CatCurl.sks in Resources */,
 				99E50A6822D417CA00C1DAB1 /* win.mp3 in Resources */,
 				99E50A5922D4109300C1DAB1 /* LaunchScreen.storyboard in Resources */,
+				9911906223221909000948F9 /* Level5.sks in Resources */,
 				9989275322F4ED54002E7F1F /* Level3.sks in Resources */,
 				99E50A6622D417CA00C1DAB1 /* mrreow.mp3 in Resources */,
 				99E50A6722D417CA00C1DAB1 /* pop.mp3 in Resources */,
 				99E50A6A22D417CA00C1DAB1 /* backgroundMusic.mp3 in Resources */,
 				99E50A4D22D4108B00C1DAB1 /* Actions.sks in Resources */,
 				9967C68B22D582D900A53996 /* Cat.sks in Resources */,
+				9911906323221909000948F9 /* Level6.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +301,7 @@
 				99E50A4F22D4108B00C1DAB1 /* GameScene.swift in Sources */,
 				9989274B22DD8073002E7F1F /* MessageNode.swift in Sources */,
 				9989274022DC40D8002E7F1F /* SKAction+Extensions.swift in Sources */,
+				991190652323149E000948F9 /* PictureNode.swift in Sources */,
 				9989273F22DC40D8002E7F1F /* SKTTimingFunctions.swift in Sources */,
 				9989273D22DC40D8002E7F1F /* CGVector+Extensions.swift in Sources */,
 				9989274322DC40D8002E7F1F /* CGPoint+Extensions.swift in Sources */,
