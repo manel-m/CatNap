@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9911905E23221832000948F9 /* discolights-loop.mov in Resources */ = {isa = PBXBuildFile; fileRef = 9911905C23221832000948F9 /* discolights-loop.mov */; };
+		9911905F23221832000948F9 /* disco-sound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9911905D23221832000948F9 /* disco-sound.m4a */; };
+		995CC9192320CBBB00DC42CF /* Level4.sks in Resources */ = {isa = PBXBuildFile; fileRef = 995CC9182320CBBB00DC42CF /* Level4.sks */; };
 		995E091122D5AEF500D54F13 /* CatCurl.sks in Resources */ = {isa = PBXBuildFile; fileRef = 995E091022D5AEF500D54F13 /* CatCurl.sks */; };
 		995E091322D5B01D00D54F13 /* CatWakeUp.sks in Resources */ = {isa = PBXBuildFile; fileRef = 995E091222D5B01D00D54F13 /* CatWakeUp.sks */; };
 		9967C68B22D582D900A53996 /* Cat.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9967C68A22D582D900A53996 /* Cat.sks */; };
@@ -47,6 +50,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9911905C23221832000948F9 /* discolights-loop.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "discolights-loop.mov"; sourceTree = "<group>"; };
+		9911905D23221832000948F9 /* disco-sound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "disco-sound.m4a"; sourceTree = "<group>"; };
+		995CC9182320CBBB00DC42CF /* Level4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level4.sks; sourceTree = "<group>"; };
 		995E091022D5AEF500D54F13 /* CatCurl.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatCurl.sks; sourceTree = "<group>"; };
 		995E091222D5B01D00D54F13 /* CatWakeUp.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatWakeUp.sks; sourceTree = "<group>"; };
 		9967C68A22D582D900A53996 /* Cat.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Cat.sks; sourceTree = "<group>"; };
@@ -99,12 +105,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9911905B23221832000948F9 /* media */ = {
+			isa = PBXGroup;
+			children = (
+				9911905C23221832000948F9 /* discolights-loop.mov */,
+				9911905D23221832000948F9 /* disco-sound.m4a */,
+			);
+			path = media;
+			sourceTree = "<group>";
+		};
 		9967C68722D4499300A53996 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				99E50A4A22D4108B00C1DAB1 /* Level1.sks */,
 				9989274C22E1332A002E7F1F /* Level2.sks */,
 				9989275222F4ED54002E7F1F /* Level3.sks */,
+				995CC9182320CBBB00DC42CF /* Level4.sks */,
 				9967C68A22D582D900A53996 /* Cat.sks */,
 				995E091022D5AEF500D54F13 /* CatCurl.sks */,
 				995E091222D5B01D00D54F13 /* CatWakeUp.sks */,
@@ -150,24 +166,25 @@
 		99E50A4722D4108B00C1DAB1 /* CatNap */ = {
 			isa = PBXGroup;
 			children = (
+				9911905B23221832000948F9 /* media */,
 				9989272F22DC40D8002E7F1F /* SKTUtils */,
 				9967C68722D4499300A53996 /* Scenes */,
 				99E50A6022D417CA00C1DAB1 /* Sounds */,
 				99E50A4822D4108B00C1DAB1 /* AppDelegate.swift */,
 				99E50A4C22D4108B00C1DAB1 /* Actions.sks */,
+				99E50A5022D4108B00C1DAB1 /* GameViewController.swift */,
 				99E50A4E22D4108B00C1DAB1 /* GameScene.swift */,
 				9989272B22D9B50A002E7F1F /* BedNode.swift */,
 				9989272D22D9B9CD002E7F1F /* CatNode.swift */,
 				9989274822DD480E002E7F1F /* BlockNode.swift */,
 				9989274A22DD8073002E7F1F /* MessageNode.swift */,
-				99E50A5022D4108B00C1DAB1 /* GameViewController.swift */,
 				9989275022EE4345002E7F1F /* HookBaseNode.swift */,
 				9989274E22E13812002E7F1F /* SpringNode.swift */,
+				998927542314CFB1002E7F1F /* StoneNode.swift */,
 				99E50A5222D4108B00C1DAB1 /* Main.storyboard */,
 				99E50A5522D4109300C1DAB1 /* Assets.xcassets */,
 				99E50A5722D4109300C1DAB1 /* LaunchScreen.storyboard */,
 				99E50A5A22D4109300C1DAB1 /* Info.plist */,
-				998927542314CFB1002E7F1F /* StoneNode.swift */,
 			);
 			path = CatNap;
 			sourceTree = "<group>";
@@ -247,6 +264,9 @@
 				99E50A6922D417CA00C1DAB1 /* lose.mp3 in Resources */,
 				99E50A5622D4109300C1DAB1 /* Assets.xcassets in Resources */,
 				995E091322D5B01D00D54F13 /* CatWakeUp.sks in Resources */,
+				995CC9192320CBBB00DC42CF /* Level4.sks in Resources */,
+				9911905E23221832000948F9 /* discolights-loop.mov in Resources */,
+				9911905F23221832000948F9 /* disco-sound.m4a in Resources */,
 				9989274D22E1332A002E7F1F /* Level2.sks in Resources */,
 				995E091122D5AEF500D54F13 /* CatCurl.sks in Resources */,
 				99E50A6822D417CA00C1DAB1 /* win.mp3 in Resources */,
