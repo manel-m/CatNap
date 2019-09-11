@@ -12,6 +12,7 @@
 		9911906223221909000948F9 /* Level5.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9911906023221909000948F9 /* Level5.sks */; };
 		9911906323221909000948F9 /* Level6.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9911906123221909000948F9 /* Level6.sks */; };
 		991190652323149E000948F9 /* PictureNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991190642323149E000948F9 /* PictureNode.swift */; };
+		9911906723275C31000948F9 /* DiscoBallNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9911906623275C31000948F9 /* DiscoBallNode.swift */; };
 		995CC9192320CBBB00DC42CF /* Level4.sks in Resources */ = {isa = PBXBuildFile; fileRef = 995CC9182320CBBB00DC42CF /* Level4.sks */; };
 		995E091122D5AEF500D54F13 /* CatCurl.sks in Resources */ = {isa = PBXBuildFile; fileRef = 995E091022D5AEF500D54F13 /* CatCurl.sks */; };
 		995E091322D5B01D00D54F13 /* CatWakeUp.sks in Resources */ = {isa = PBXBuildFile; fileRef = 995E091222D5B01D00D54F13 /* CatWakeUp.sks */; };
@@ -58,6 +59,7 @@
 		9911906023221909000948F9 /* Level5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level5.sks; sourceTree = "<group>"; };
 		9911906123221909000948F9 /* Level6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level6.sks; sourceTree = "<group>"; };
 		991190642323149E000948F9 /* PictureNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureNode.swift; sourceTree = "<group>"; };
+		9911906623275C31000948F9 /* DiscoBallNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoBallNode.swift; sourceTree = "<group>"; };
 		995CC9182320CBBB00DC42CF /* Level4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level4.sks; sourceTree = "<group>"; };
 		995E091022D5AEF500D54F13 /* CatCurl.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatCurl.sks; sourceTree = "<group>"; };
 		995E091222D5B01D00D54F13 /* CatWakeUp.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatWakeUp.sks; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				9989274E22E13812002E7F1F /* SpringNode.swift */,
 				998927542314CFB1002E7F1F /* StoneNode.swift */,
 				991190642323149E000948F9 /* PictureNode.swift */,
+				9911906623275C31000948F9 /* DiscoBallNode.swift */,
 				99E50A5222D4108B00C1DAB1 /* Main.storyboard */,
 				99E50A5522D4109300C1DAB1 /* Assets.xcassets */,
 				99E50A5722D4109300C1DAB1 /* LaunchScreen.storyboard */,
@@ -307,6 +310,7 @@
 				9989274322DC40D8002E7F1F /* CGPoint+Extensions.swift in Sources */,
 				9989274122DC40D8002E7F1F /* SKAction+SpecialEffects.swift in Sources */,
 				998927552314CFB1002E7F1F /* StoneNode.swift in Sources */,
+				9911906723275C31000948F9 /* DiscoBallNode.swift in Sources */,
 				9989274522DC40D8002E7F1F /* SKTAudio.swift in Sources */,
 				9989274222DC40D8002E7F1F /* SKNode+Extensions.swift in Sources */,
 				9989274422DC40D8002E7F1F /* SKTEffects.swift in Sources */,
